@@ -1,0 +1,12 @@
+.Mone{
+    color: white                          ;
+}
+/* for small device */
+@media only screen and (max-width: 600px) {
+    .Mone{
+        height: auto;
+        width: 100vw;
+        /* overflow-x: hidden; */
+    }
+
+}

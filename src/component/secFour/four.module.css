@@ -1,0 +1,199 @@
+.Fone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    overflow: hidden;
+    overflow-x: hidden;
+    margin-top: 100px;
+}
+.SmF{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 350px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.SmallBG{
+    position: absolute;
+    width: 100vw;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.SLeft{
+    position: relative;
+    bottom: 160px;
+    right: 200px;
+}
+.SRight{
+    position: relative;
+    top: 60px;
+    left: 150px;
+}
+
+
+
+.Bigfa{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    align-items: center;
+}
+/* Rigth fa */
+.FaLeft{
+    width: 55%;
+    margin-left: 30px;
+}
+.FaRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;    
+    position: relative;
+}
+.FaRimg{
+    border-radius: 50%;
+    width: 80%;
+}
+.Circ{
+    position: absolute;
+    width: 82%;
+}
+
+/* Left question */
+.FaqQ{
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.FTwo{
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    color: white;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 2px solid #424242;
+}
+.FTwo img {
+    cursor: pointer;
+}
+/* adding before to p in FaqQ */
+.FaqQ p{
+    max-width: 70%;
+}
+.FaqQ p::after{
+    content: "";
+    display: block;
+    position: relative;
+    width: 510px;
+}
+.FaqA{
+    font-size: 26px;
+    padding: 8px;
+    display: block;
+    transition: all 0.5s ease;
+}
+.FaqA2{
+    transition: all 0.5s ease;
+    font-size: 26px;
+
+    padding: 8px;
+    display: none;
+}
+
+.BGH{
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    flex-direction: row;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Leed{
+    position: relative;
+    bottom: 180px;
+    right: 180px;
+}
+.Rii{
+    position: relative;
+    top: 200px;
+}
+/* PDF button */
+.GreenPdf{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    width: 140px;
+    box-shadow: 0px -2px 4px rgba(95, 193, 124,0.7);
+    /* background: linear-gradient(180deg, #22BC50 0%, rgba(0, 201, 60, 0.3) 100%); */
+    clip-path: polygon(0% 15%, 6% 15%, 6% 0, 94% 1%, 94% 13%, 100% 15%, 100% 85%, 94% 84%, 94% 100%, 5% 100%, 6% 85%, 0% 85%);
+    font-family: 'Thintel';
+    font-weight: 400;
+    padding: 1px 25px;
+    background-color: gray;
+}
+.GreenPdf img{
+    width: 45px;
+}
+.GreenPdf p{
+    font-size: 26px;
+    margin-right: 10px;
+}   
+
+/* for mobile */
+@media only screen and (max-width: 500px) , (max-device-width: 1024px) {
+    .Fone{
+        justify-content: flex-start;
+        flex-direction: column;
+        height: auto;
+        position: relative;        
+        margin-top: 1px;
+    }
+    .SmF{
+        position: relative;
+        height: calc(30vh - 80px);
+    }
+    .BGH{
+        display: none;
+        overflow: hidden;
+    }
+    .SmallBG{
+        overflow: hidden;
+    }
+    .FaRight{
+        display: none;
+    }
+    .FaLeft{
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 20px;
+
+    }
+    .FTwo{
+        width: 90%;
+        margin-top: 0px;
+    }
+ 
+}
